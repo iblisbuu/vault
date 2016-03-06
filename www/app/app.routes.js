@@ -4,6 +4,6 @@
 	angular
 		.module('app')
 		.config(function($urlRouterProvider) {
-			$urlRouterProvider.otherwise('/template');
+			$urlRouterProvider.otherwise('/login');
 		});
 })();

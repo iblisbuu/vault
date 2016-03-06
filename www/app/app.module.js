@@ -4,9 +4,11 @@
 	angular.module('app', [
 
 		'ui.router',
+		'ui.bootstrap',
         // Shared
 
         // Components
-        'app.template'
+        'app.template',
+        'app.login'
     ]);
 })();

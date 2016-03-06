@@ -13,5 +13,5 @@ require('./app/routes/mainRoutes')(app, router);
 require('./app/routes/templateRoutes')(router);
 
 app.listen(3000, function () {
-  console.log('Angular Seed running on port 3000');
+  console.log('Vault is running on port 3000');
 });
