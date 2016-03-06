@@ -1,0 +1,27 @@
+{
+  "name": "angular-1-seed",
+  "version": "0.0.0",
+  "description": "angular 1 template",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edwincarlson/angular-1-seed.git"
+  },
+  "keywords": [
+    "angular",
+    "seed",
+    "template"
+  ],
+  "author": "Edwin Carlson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/edwincarlson/angular-1-seed/issues"
+  },
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}

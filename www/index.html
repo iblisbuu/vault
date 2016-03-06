@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Angular 1 Seed</title>
+		<link rel="stylesheet" href="assets/css/styles.css">
+
+		<!-- Dependencies -->
+		<script src="assets/libs/angular/angular.min.js"></script>
+		<script src="assets/libs/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+		<!-- Bootstrapping -->
+		<script src="app/app.module.js"></script>
+		<script src="app/app.routes.js"></script>
+
+		<!-- Shared -->
+
+		<!-- template -->
+		<script src="app/components/template/template.module.js"></script>
+		<script src="app/components/template/template.routes.js"></script>
+		<script src="app/components/template/template.controller.js"></script>
+		<script src="app/components/template/template.api.js"></script>
+
+	</head>
+
+	<!-- Bind the "app" module here -->
+	<body ng-app="app">
+
+		<!-- Views are rendered here -->
+		<div ui-view></div>
+
+	</body>
+</html>

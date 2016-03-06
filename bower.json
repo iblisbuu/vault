@@ -1,0 +1,20 @@
+{
+  "name": "angular-1-seed",
+  "version": "0.0.0",
+  "homepage": "https://github.com/edwincarlson/angular-1-seed",
+  "authors": [
+    "Edwin Carlson <eddie.carlson5@gmail.com>"
+  ],
+  "description": "angular 1.x template",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "angular",
+    "seed"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-ui-router": "^0.2.18"
+  }
+}
