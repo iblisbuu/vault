@@ -97,3 +97,8 @@
 	letter-spacing: initial;
 	font-family: 'Raleway';
 }
+
+#overrides .glyphicon-minus{
+	font-size: 26px;
+	color: #FFD94C;
+}

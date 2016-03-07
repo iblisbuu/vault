@@ -9,7 +9,7 @@
         var vm = this;
 
         vm.login = function() {
-        	$state.go('template');
+        	$state.go('accounts');
         };
     }
 })();

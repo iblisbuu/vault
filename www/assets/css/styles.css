@@ -1,7 +1,63 @@
 @import '../../app/components/login/login.css';
+@import '../../app/components/accounts/accounts.css';
 
-html, body, .view {
+html, body{
     margin: 0;
-    height: 100%;
+    /*height: 100%;*/
     font-family: 'Raleway';
 }
+
+.view1{
+	position: absolute;
+   	top: 0; /* Header Height */
+   	bottom: 0; /* Footer Height */
+   	width: 100%;
+}
+
+.view2{
+	position: absolute;
+   	top: 50px; /* Header Height */
+   	bottom: 0; /* Footer Height */
+   	width: 100%;
+}
+
+#overrides .navbar{
+	margin-bottom: 0;
+	background: -webkit-radial-gradient(top, #353B44 -10%, #252932 60%);
+    background: radial-gradient(at top, #353B44 -10%, #252932 60%);
+    box-shadow: inset 0px 1px 1px 0px #39444e;
+    background-color: #252932;
+}
+
+#overrides .navbar-inverse{
+	border-color: #252932;
+}
+
+.navbar-header{
+	padding-left: 10%;
+	padding-right: 25px;
+}
+
+.nav-right{
+	padding-right: 10%;
+}
+
+#overrides .nav-brand{
+	color: #FFD94C;
+	font-size: 32px;
+}
+
+#overrides .navbar-inverse .navbar-nav>li>a{
+	font-size: 18px;
+	color: white;
+	transition: all 0.2s ease;
+}
+
+#overrides .navbar-inverse .navbar-nav>li>a:hover{
+	color: #FFD94C;
+}
+
+#overrides .navbar-inverse .navbar-nav>li>.activeTab{
+	color: #FFD94C;
+}
+

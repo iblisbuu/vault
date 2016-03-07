@@ -9,6 +9,7 @@
 
         // Components
         'app.template',
-        'app.login'
+        'app.login',
+        'app.accounts'
     ]);
 })();
