@@ -5,7 +5,22 @@
 				<h3 class="panel-title">Accounts Overview</h3>
 			</div>
 			<div class="panel-body">
-				Panel content
+			    <table datatable="ng" class="row-border hover">
+			        <thead>
+			        <tr class="row">
+			            <th>Account</th>
+			            <th>Balance</th>
+			            <th>Status</th>
+			        </tr>
+			        </thead>
+			        <tbody>
+			        <tr ng-repeat="account in vm.accounts" class="row">
+			            <td>{{ account.name }}</td>
+			            <td>{{ account.balance }}</td>
+			            <td>{{ account.status }}</td>
+			        </tr>
+			        </tbody>
+			    </table>
 			</div>
 		</div>
 	</div>
@@ -15,7 +30,12 @@
 				<h3 class="panel-title">Accounts Summary Information</h3>
 			</div>
 			<div class="panel-body">
-				Panel content
+				<ul class="list-group">
+				  <li class="list-group-item">2 Open Deposit Accounts with a total balance of <b>$26,959.36</b></li>
+				  <li class="list-group-item">1 Closed Deposit Account with a total balance of <b>$75,684.56</b></li>
+				  <li class="list-group-item">Last Login: Sunday, March 6, 2016 8:29:07 PM Central Time</li>
+				  <li class="list-group-item">You have accessed your accounts <b>307 time(s)</b> since Tuesday, May 29, 2012 10:19:01 PM Central Time</li>
+				</ul>
 			</div>
 		</div>
 	</div>

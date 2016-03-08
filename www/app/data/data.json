@@ -1,0 +1,14 @@
+[{
+    "name": "Checking",
+    "balance": "$5,325.15",
+    "status": "open"
+}, {
+    "name": "Savings",
+    "balance": "$21,634.21",
+    "status": "open"
+}, {
+    "name": "Retirement",
+    "balance": "$75,684.56",
+    "status": "closed"
+}
+]

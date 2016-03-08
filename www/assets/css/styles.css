@@ -3,7 +3,6 @@
 
 html, body{
     margin: 0;
-    /*height: 100%;*/
     font-family: 'Raleway';
 }
 
@@ -26,7 +25,7 @@ html, body{
 	background: -webkit-radial-gradient(top, #353B44 -10%, #252932 60%);
     background: radial-gradient(at top, #353B44 -10%, #252932 60%);
     box-shadow: inset 0px 1px 1px 0px #39444e;
-    background-color: #252932;
+    background-color: #191C22;
 }
 
 #overrides .navbar-inverse{

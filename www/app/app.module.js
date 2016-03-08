@@ -3,9 +3,11 @@
 
 	angular.module('app', [
 
+        //Dependencies
 		'ui.router',
 		'ui.bootstrap',
-        // Shared
+        'ngResource',
+        'datatables',
 
         // Components
         'app.template',

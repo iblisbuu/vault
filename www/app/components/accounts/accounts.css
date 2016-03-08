@@ -3,15 +3,14 @@
 	padding-right: 10%;
 	margin: 0;
     height: 100%;
-    /*color: white;*/
-    background: -webkit-radial-gradient(top, #353B44 -10%, #363c49 60%);
-    background: radial-gradient(at top, #353B44 -10%, #363c49 60%);
+    background: -webkit-radial-gradient(top, #353B44 -10%, #2b303b 60%);
+    background: radial-gradient(at top, #353B44 -10%, #2b303b 60%);
     box-shadow: inset 0px 1px 1px 0px #39444e;
-    background-color: #363c49;
+    background-color: #2b303b;
 }
 
 .accounts-panel{
-	padding-top: 100px;
+	padding-top: 75px;
 }
 
 #overrides .panel-title{
