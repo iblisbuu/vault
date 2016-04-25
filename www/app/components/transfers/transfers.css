@@ -1,0 +1,26 @@
+.transfers label{
+	padding-top: 15px;
+}
+.transfers .fromAccount{
+	padding-right: 20px;
+}
+
+.transfers .toAccount{
+	padding-right: 38px;
+}
+
+.transfers .amount{
+	padding-right: 3px;
+}
+
+.transfers .frequency{
+	padding-right: 42px;
+}
+
+.transfers .date{
+	padding-right: 22px;
+}
+
+.transfers .memo{
+	padding-right: 11px;
+}

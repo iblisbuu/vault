@@ -1,0 +1,31 @@
+<div class="bg transactions">
+	<div class="accounts-panel">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">{{vm.account.name}} Account Transactions</h3>
+			</div>
+			<div class="panel-body">
+			    <table datatable="ng" class="row-border hover">
+			        <thead>
+			        <tr class="row">
+			            <th>Date</th>
+			            <th>Description</th>
+			            <th>Debit</th>
+			            <th>Credit</th>
+			            <th>Balance</th>
+			        </tr>
+			        </thead>
+			        <tbody>
+			        <tr ng-repeat="transaction in vm.account.transactions" class="row">
+			            <td>{{ transaction.date }}</td>
+			            <td>{{ transaction.description }}</td>
+			            <td class="debit">{{ transaction.debit }}</td>
+			            <td>{{ transaction.credit }}</td>
+			            <td>{{ transaction.balance }}</td>
+			        </tr>
+			        </tbody>
+			    </table>
+			</div>
+		</div>
+	</div>
+</div>

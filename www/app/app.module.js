@@ -12,6 +12,9 @@
         // Components
         'app.template',
         'app.login',
-        'app.accounts'
+        'app.accounts',
+        'app.billing',
+        'app.management',
+        'app.transfers'
     ]);
 })();

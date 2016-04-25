@@ -1,12 +1,15 @@
 [{
+	"id": "1",
     "name": "Checking",
     "balance": "$5,325.15",
     "status": "open"
 }, {
+	"id": "2",
     "name": "Savings",
     "balance": "$21,634.21",
     "status": "open"
 }, {
+	"id": "3",
     "name": "Retirement",
     "balance": "$75,684.56",
     "status": "closed"

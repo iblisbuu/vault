@@ -1,0 +1,86 @@
+<div class="bg transfers">
+	<div class="accounts-panel">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Transfer History</h3>
+			</div>
+			<div class="panel-body">
+			    <table datatable="ng" class="row-border hover">
+			        <thead>
+			        <tr class="row">
+			            <th>Date</th>
+			            <th>From Account</th>
+			            <th>To Account</th>
+			            <th>Frequency</th>
+			            <th>Amount</th>
+			        </tr>
+			        </thead>
+			        <tbody>
+			        <tr ng-repeat="transfer in vm.transfers" class="row">
+			            <td>{{ transfer.date }}</td>
+			            <td>{{ transfer.fromAccount }}</td>
+			            <td>{{ transfer.toAccount }}</td>
+			            <td>{{ transfer.frequency }}</td>
+			            <td>{{ transfer.amount }}</td>
+			        </tr>
+			        </tbody>
+			    </table>
+			</div>
+		</div>
+	</div>
+	<div class="accounts-panel">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">New Transfer</h3>
+			</div>
+			<div class="panel-body">
+				<label class="fromAccount">From Account: </label>
+				<div class="btn-group" uib-dropdown>
+			      <button id="single-button" type="button" class="btn btn-default" uib-dropdown-toggle>
+			        {{ vm.transfer.fromAccount }} <span class="caret"></span>
+			      </button>
+			      <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="single-button">
+			        <li role="menuitem" ng-repeat="account in vm.accounts">
+			        	<a>{{ account.title }}</a>
+			        </li>
+			      </ul>
+			    </div>
+			    <br>
+			    <label class="toAccount">To Account: </label>
+			    <div class="btn-group" uib-dropdown>
+			      <button id="single-button" type="button" class="btn btn-default" uib-dropdown-toggle>
+			        {{ vm.transfer.fromAccount }} <span class="caret"></span>
+			      </button>
+			      <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="single-button">
+			        <li role="menuitem" ng-repeat="account in vm.accounts">
+			        	<a>{{ account.title }}</a>
+			        </li>
+			      </ul>
+			    </div>
+			    <br>
+			    <label class="amount">Transfer Amount: </label>
+			    <input></input>
+			    <br>
+			    <label class="frequency">Frequency: </label>
+			    <div class="btn-group" uib-dropdown>
+			      <button id="single-button" type="button" class="btn btn-default" uib-dropdown-toggle>
+			        {{ vm.transfer.frequency }} <span class="caret"></span>
+			      </button>
+			      <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="single-button">
+			        <li role="menuitem" ng-repeat="account in vm.accounts">
+			        	<a>{{ account.title }}</a>
+			        </li>
+			      </ul>
+			    </div>
+			    <br>
+			    <label class="date">Transfer Date: </label>
+			    <input></input>
+			    <br>
+			    <label class="memo">Transfer Memo: </label>
+			    <input></input>
+			    <br>
+			    <button type="button" class="btn btn-default" ng-click="">Submit</button>
+			</div>
+		</div>
+	</div>
+</div>
