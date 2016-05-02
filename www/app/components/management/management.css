@@ -1,0 +1,27 @@
+.username{
+	padding-right: 69px;
+}
+
+.new-username{
+	padding-right: 35px;
+}
+
+.enter-password{
+	padding-right: 28px;
+}
+
+.new-password{
+	padding-right: 35px;
+}
+
+.confirm-password{
+	padding-right: 10px;
+}
+
+.reset-question{
+	padding-right: 23px;
+}
+
+.reset-answer{
+	padding-right: 35px;
+}

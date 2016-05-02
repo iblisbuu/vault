@@ -5,6 +5,14 @@
 	padding-right: 20px;
 }
 
+.transfers .dropdown{
+	width: 132px;
+}
+
+.transfers .dropdown li:hover{
+	cursor: pointer;
+}
+
 .transfers .toAccount{
 	padding-right: 38px;
 }
@@ -23,4 +31,12 @@
 
 .transfers .memo{
 	padding-right: 11px;
+}
+
+.transfers .center-body{
+	margin-left: 20px;
+}
+
+.transfers .submit-transfer{
+	margin-top: 15px;
 }

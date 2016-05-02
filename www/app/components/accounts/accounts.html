@@ -14,7 +14,7 @@
 			        </tr>
 			        </thead>
 			        <tbody>
-			        <tr ng-repeat="account in vm.accounts" class="row" ui-sref="transactions({accountID: account.id})">
+			        <tr ng-repeat="account in vm.accounts" class="row accounts" ui-sref="transactions({accountID: account.id})">
 			            <td>{{ account.name }}</td>
 			            <td>{{ account.balance }}</td>
 			            <td>{{ account.status }}</td>

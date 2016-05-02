@@ -2,39 +2,43 @@
 	<div class="accounts-panel">
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				<h3 class="panel-title">Accounts Overview</h3>
+				<h3 class="panel-title">Login Information</h3>
 			</div>
 			<div class="panel-body">
-			    <table datatable="ng" class="row-border hover">
-			        <thead>
-			        <tr class="row">
-			            <th>Account</th>
-			            <th>Balance</th>
-			            <th>Status</th>
-			        </tr>
-			        </thead>
-			        <tbody>
-			        <tr ng-repeat="account in vm.accounts" class="row">
-			            <td>{{ account.name }}</td>
-			            <td>{{ account.balance }}</td>
-			            <td>{{ account.status }}</td>
-			        </tr>
-			        </tbody>
-			    </table>
+				<ul class="list-group">
+				  <li class="list-group-item">
+					  <label class="username">Username: </label> tsmith<br>
+					  <label class="new-username">New Username: </label> <input></input><br>
+					  <button type="button" class="btn btn-default submit-transfer" ng-click="">Update</button>
+				  </li>
+				  <li class="list-group-item">
+					  <label class="enter-password">Enter Password: </label> <input></input><br>
+					  <label class="new-password">New Password: </label> <input></input><br>
+					  <label class="confirm-password">Confirm Password: </label> <input></input><br>
+					  <button type="button" class="btn btn-default submit-transfer" ng-click="">Update</button>
+				  </li>
+				</ul>
 			</div>
 		</div>
 	</div>
 	<div class="accounts-panel">
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				<h3 class="panel-title">Accounts Summary Information</h3>
+				<h3 class="panel-title">Login Information</h3>
 			</div>
 			<div class="panel-body">
 				<ul class="list-group">
-				  <li class="list-group-item">2 Open Deposit Accounts with a total balance of <b>$26,959.36</b></li>
-				  <li class="list-group-item">1 Closed Deposit Account with a total balance of <b>$75,684.56</b></li>
-				  <li class="list-group-item">Last Login: Sunday, March 6, 2016 8:29:07 PM Central Time</li>
-				  <li class="list-group-item">You have accessed your accounts <b>307 time(s)</b> since Tuesday, May 29, 2012 10:19:01 PM Central Time</li>
+				  <li class="list-group-item">
+					  <label class="username">Email: </label> tsmith@gmail.com<br>
+					  <label class="new-username">New Email: </label> <input></input><br>
+					  <label class="confirm-password">Confirm Email: </label> <input></input><br>
+					  <button type="button" class="btn btn-default submit-transfer" ng-click="">Update</button>
+				  </li>
+				  <li class="list-group-item">
+					  <label class="reset-question">Password Reset Question: </label> <input value="Town you were born in?"></input><br>
+					  <label class="reset-answer">Password Reset Answer: </label> <input value="Park Rapids, MN"></input><br>
+					  <button type="button" class="btn btn-default submit-transfer" ng-click="">Update</button>
+				  </li>
 				</ul>
 			</div>
 		</div>

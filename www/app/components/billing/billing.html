@@ -1,41 +1,49 @@
-<div class="bg">
+<div class="bg billing">
 	<div class="accounts-panel">
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				<h3 class="panel-title">Accounts Overview</h3>
+				<h3 class="panel-title">Credit Card Statement</h3>
+			</div>
+			<div class="panel-body">
+				<ul class="list-group">
+				  <li class="list-group-item"><b>Current Balance: $660.50</b></li>
+				  <li class="list-group-item">Pending Balance $104.00</li>
+				  <li class="list-group-item">Statement Balance $306.54</li>
+				  <li class="list-group-item">Available Credit $735.50</li>
+				  <li class="list-group-item">Current Credit Limit Amount $1,500.00</li>
+				  <li class="list-group-item">Last Payment as of Apr 15, 2016 $306.54</li>
+				  <li class="list-group-item">Total Minimum Due $0.00</li>
+				  <li class="list-group-item">Payment Due Date May 07, 2016</li>
+				  <li class="list-group-item">Reward Balance 11763</li>
+				</ul>
+				<button type="button" class="btn btn-default" ng-click="">Pay Bill</button>
+				<button type="button" class="btn btn-default" ng-click="">View Rewards</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="accounts-panel">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Recent Credit Card Transactions</h3>
 			</div>
 			<div class="panel-body">
 			    <table datatable="ng" class="row-border hover">
 			        <thead>
 			        <tr class="row">
-			            <th>Account</th>
-			            <th>Balance</th>
-			            <th>Status</th>
+			            <th>Date</th>
+			            <th>Description</th>
+			            <th>Amount</th>
 			        </tr>
 			        </thead>
 			        <tbody>
-			        <tr ng-repeat="account in vm.accounts" class="row">
-			            <td>{{ account.name }}</td>
-			            <td>{{ account.balance }}</td>
-			            <td>{{ account.status }}</td>
+			        <tr ng-repeat="transaction in vm.transactions" class="row">
+			            <td>{{ transaction.date }}</td>
+			            <td>{{ transaction.description }}</td>
+			            <td class="debit">{{ transaction.debit }}</td>
 			        </tr>
 			        </tbody>
 			    </table>
-			</div>
-		</div>
-	</div>
-	<div class="accounts-panel">
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h3 class="panel-title">Accounts Summary Information</h3>
-			</div>
-			<div class="panel-body">
-				<ul class="list-group">
-				  <li class="list-group-item">2 Open Deposit Accounts with a total balance of <b>$26,959.36</b></li>
-				  <li class="list-group-item">1 Closed Deposit Account with a total balance of <b>$75,684.56</b></li>
-				  <li class="list-group-item">Last Login: Sunday, March 6, 2016 8:29:07 PM Central Time</li>
-				  <li class="list-group-item">You have accessed your accounts <b>307 time(s)</b> since Tuesday, May 29, 2012 10:19:01 PM Central Time</li>
-				</ul>
 			</div>
 		</div>
 	</div>

@@ -33,14 +33,14 @@
 			<div class="panel-heading">
 				<h3 class="panel-title">New Transfer</h3>
 			</div>
-			<div class="panel-body">
+			<div class="panel-body center-body">
 				<label class="fromAccount">From Account: </label>
 				<div class="btn-group" uib-dropdown>
-			      <button id="single-button" type="button" class="btn btn-default" uib-dropdown-toggle>
+			      <button id="single-button" type="button" class="btn btn-default dropdown" uib-dropdown-toggle>
 			        {{ vm.transfer.fromAccount }} <span class="caret"></span>
 			      </button>
 			      <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="single-button">
-			        <li role="menuitem" ng-repeat="account in vm.accounts">
+			        <li role="menuitem" ng-repeat="account in vm.accounts" ng-click="vm.setFromAccount(account.title)">
 			        	<a>{{ account.title }}</a>
 			        </li>
 			      </ul>
@@ -48,11 +48,11 @@
 			    <br>
 			    <label class="toAccount">To Account: </label>
 			    <div class="btn-group" uib-dropdown>
-			      <button id="single-button" type="button" class="btn btn-default" uib-dropdown-toggle>
-			        {{ vm.transfer.fromAccount }} <span class="caret"></span>
+			      <button type="button" class="btn btn-default dropdown" uib-dropdown-toggle>
+			        {{ vm.transfer.toAccount }} <span class="caret"></span>
 			      </button>
 			      <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="single-button">
-			        <li role="menuitem" ng-repeat="account in vm.accounts">
+			        <li role="menuitem" ng-repeat="account in vm.accounts" ng-click="vm.setToAccount(account.title)">
 			        	<a>{{ account.title }}</a>
 			        </li>
 			      </ul>
@@ -63,13 +63,15 @@
 			    <br>
 			    <label class="frequency">Frequency: </label>
 			    <div class="btn-group" uib-dropdown>
-			      <button id="single-button" type="button" class="btn btn-default" uib-dropdown-toggle>
+			      <button id="single-button" type="button" class="btn btn-default dropdown" uib-dropdown-toggle>
 			        {{ vm.transfer.frequency }} <span class="caret"></span>
 			      </button>
 			      <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="single-button">
-			        <li role="menuitem" ng-repeat="account in vm.accounts">
-			        	<a>{{ account.title }}</a>
-			        </li>
+			        <li role="menuitem" ng-click="vm.setFrequency('One Time')"><a>One Time</a></li>
+			        <li role="menuitem" ng-click="vm.setFrequency('Weekly')"><a>Weekly</a></li>
+			        <li role="menuitem" ng-click="vm.setFrequency('Bi-Weekly')"><a>Bi-Weekly</a></li>
+			        <li role="menuitem" ng-click="vm.setFrequency('Semi-Monthly')"><a>Semi-Monthly</a></li>
+			        <li role="menuitem" ng-click="vm.setFrequency('Monthly')"><a>Monthly</a></li>
 			      </ul>
 			    </div>
 			    <br>
@@ -79,7 +81,40 @@
 			    <label class="memo">Transfer Memo: </label>
 			    <input></input>
 			    <br>
-			    <button type="button" class="btn btn-default" ng-click="">Submit</button>
+			    <button type="button" class="btn btn-default submit-transfer" ng-click="">Submit</button>
+			</div>
+		</div>
+	</div>
+	<div class="accounts-panel">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Recurring Transfers</h3>
+			</div>
+			<div class="panel-body">
+				<table datatable="ng" class="row-border hover">
+			        <thead>
+			        <tr class="row">
+			            <th>Start Date</th>
+			            <th>End Date</th>
+			            <th>From Account</th>
+			            <th>To Account</th>
+			            <th>Frequency</th>
+			            <th>Amount</th>
+			            <th></th>
+			        </tr>
+			        </thead>
+			        <tbody>
+			        <tr ng-repeat="transfer in vm.recurringTransfers" class="row">
+			            <td>{{ transfer.date }}</td>
+			            <td>{{ transfer.date }}</td>
+			            <td>{{ transfer.fromAccount }}</td>
+			            <td>{{ transfer.toAccount }}</td>
+			            <td>{{ transfer.frequency }}</td>
+			            <td>{{ transfer.amount }}</td>
+			            <td><button type="button" class="btn btn-default" ng-click="vm.cancelRecurringTransfer($index)">Cancel</button></td>
+			        </tr>
+			        </tbody>
+			    </table>
 			</div>
 		</div>
 	</div>

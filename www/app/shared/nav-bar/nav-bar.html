@@ -15,7 +15,7 @@
       <div class="collapse navbar-collapse" ng-class="!navCollapsed && 'in'">
       
         <ul class="nav navbar-nav">
-          <li><a ng-class="{activeTab : ('accounts' | isState)}" ui-sref="accounts">Accounts</a></li>
+          <li><a ng-class="{activeTab : ('accounts' | isState)||('transactions' | isState)}" ui-sref="accounts">Accounts</a></li>
           <li><a ng-class="{activeTab : ('transfers' | isState)}" ui-sref="transfers">Transfers</a></li>
           <li><a ng-class="{activeTab : ('billing' | isState)}" ui-sref="billing">Billing</a></li>
           <li><a ng-class="{activeTab : ('management' | isState)}" ui-sref="management">Management</a></li>

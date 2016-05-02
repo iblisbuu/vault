@@ -1,14 +1,3 @@
-.login-bg{
-    margin: 0;
-    height: 100%;
-    color: white;
-    background: -webkit-radial-gradient(top, #353B44 -10%, #252932 60%);
-    background: radial-gradient(at top, #353B44 -10%, #252932 60%);
-    box-shadow: inset 0px 1px 1px 0px #39444e;
-    background-color: #252932;
-}
-
-
 .brand1{
 	padding-top: 50px;
 	padding-left: 10% !important;

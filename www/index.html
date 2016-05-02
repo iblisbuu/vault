@@ -74,12 +74,12 @@
 	</head>
 
 	<!-- Bind the "app" module here -->
-	<body ng-app="app" id="overrides">
+	<body ng-app="app" id="overrides" ng-class="{view1 : ('login' | isState), view2 : !('login' | isState)}">
 
 		<div ng-if="!('login' | isState)" ng-include="'app/shared/nav-bar/nav-bar.html'"></div>
 		<!-- <div ng-include="'app/shared/nav-bar/nav-bar-login.html'"></div> -->
 		<!-- Views are rendered here -->
-		<div ui-view ng-class="{view1 : ('login' | isState), view2 : !('login' | isState)}"></div>
+		<div ui-view></div>
 
 	</body>
 </html>
